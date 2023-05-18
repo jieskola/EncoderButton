@@ -1,3 +1,11 @@
+/** 
+ * Forked from https://github.com/Stutchbury/EncoderButton (2023-05-18, SHA: 3c59104b57a3cc2474e16bad8889aa9dcb6a9d5f)
+ * 
+ * Changes:
+ * - Changed include paths (2023-05-18)
+ *
+ */
+
 /**
  * A lossless event based rotary encoder button wrapper for 
  * Paul Stoffregen's Encoder library 
@@ -38,11 +46,11 @@
 //Standing on the shoulders of giants
 // http://www.pjrc.com/teensy/td_libs_Encoder.html
 #ifndef Encoder_h
-  #include <Encoder.h>
+  #include "../../Encoder/Encoder.h"
 #endif
 
 #ifndef Bounce2_h
-  #include <Bounce2.h>
+  #include "../../Bounce2/src/Bounce2.h"
 #endif
 
 #if defined(ARDUINO_ARCH_ESP32) || defined(ESP8266) || defined(CORE_TEENSY)
